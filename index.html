@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+            <h3 class = "firstOutcome">
+            </h3>
+        </div>
+        <div>
+            <h3 class = "secondOutcome">
+            </h3>
+        </div>
+    <script>
+        const UPPER_LIMIT = 49;
+
+        let firstHeading = document.querySelector(".firstOutcome");
+        let secondHeading = document.querySelector(".secondOutcome");
+
+        for (let firstNumber = 1; firstNumber <= UPPER_LIMIT; firstNumber+=6) {
+
+            let firstRandom = Math.floor(Math.random()*50);
+            console.log(firstRandom);
+            firstHeading.textContent = firstRandom;
+
+         }
+
+
+
+
+        let secondRandom = Math.floor(Math.random()*50);
+         while (secondRandom < 6 ) {
+            console.log(secondRandom);
+         }
+        secondHeading.textContent = secondRandom;
+
+    </script>    
+</body>
+</html>
